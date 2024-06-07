@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from django.views import View
 
-# Create your views here.
+class MineCoinPage(View):
+    def get(self,request):
+        None
