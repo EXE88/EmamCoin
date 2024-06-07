@@ -1,0 +1,18 @@
+* {
+    color: white;
+}
+body {
+    background-color: rgb(47, 53, 47);
+}
+.coin-div {
+    text-align: center;
+    height: 100%;
+}
+.coin-img {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
