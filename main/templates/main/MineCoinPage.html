@@ -2,11 +2,23 @@
 
 {% block head %}
     <script src="/static/js/CoinClickScript.js"></script>
+    <script src="/static/js/CoinCounterScript.js"></script>
     <link rel="stylesheet" href="/static/css/MineCoinPageStyle.css">
 {% endblock head %}
 
 {% block body %}
-    <div class="coin-div">
-        <img src="/static/images/coin.png" alt="" onclick="coin_click()" class="coin-img">
+<!--counter-->
+<div class="coin-counter-div">
+    <div class="coin-counter-items">
+        <img src="/static/images/coin.png" style="width: 50px; height: auto;" id="coin-counter-img">
     </div>
+    <div class="coin-counter-items">
+        <h1 id="coin-counter-text">100</h1>
+    </div>
+</div>
+<!--coin-->
+<div class="coin-div">
+    <img src="/static/images/coin.png" onclick="coin_click_animation(); add_coin_to_counter();" class="coin-img" id="shomb">
+
+</div>
 {% endblock body %}
