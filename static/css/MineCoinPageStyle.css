@@ -22,7 +22,7 @@ body {
     position: absolute;
     top: 37%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-30%);
 }
 .coin-counter-div {
     display: flex;
@@ -33,5 +33,17 @@ body {
     align-items: center;
 }
 .coin-counter-items {
-    margin-right: 10px;
+    margin-right: 5px;
+}
+.current-league-div {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.current-league-items {
+    margin-right: 5px;    
 }
