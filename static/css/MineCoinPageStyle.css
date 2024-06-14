@@ -1,3 +1,5 @@
+/*_______________every thing______________*/
+
 * {
     color: white;
     -webkit-touch-callout: none;
@@ -7,23 +9,15 @@
     -ms-user-select: none;
     user-select: none;
 }
+
+/*____________just body_________________*/
+
 body {
     background-color: rgb(47, 53, 47);
 }
-.coin-div {
-    text-align: center;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-.coin-img {
-    width: 285px;
-    height: auto;
-    position: absolute;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%,-30%);
-}
+
+/*______________div`s_______________*/
+
 .coin-counter-div {
     display: flex;
     position: absolute;
@@ -32,9 +26,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.coin-counter-items {
-    margin-right: 5px;
-}
+
 .current-league-div {
     display: flex;
     position: absolute;
@@ -44,6 +36,66 @@ body {
     align-items: center;
     margin-top: 10px;
 }
+
+.coin-div {
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.energy-bar-div {
+    position: absolute;
+    top: 72%;  
+    height: 28%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*________________div`s content____________*/
+
+.coin-counter-items {
+    margin-right: 5px;
+}
+
 .current-league-items {
     margin-right: 5px;    
 }
+
+.coin-img {
+    width: 285px;
+    height: auto;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+}
+
+.energy-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.energy-count>h1 {
+    font-size: 22px;
+}
+
+.energy-bar {
+    margin-top: 4px;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 13px;
+    padding: 3px;
+}
+
+.energy-bar>div {
+    background-color: lightgreen;
+    width: 40%;
+    height: 20px;
+    border-radius: 10px;
+}
+
