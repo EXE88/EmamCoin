@@ -1,21 +1,3 @@
-/*_______________every thing______________*/
-
-* {
-    color: white;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/*____________just body_________________*/
-
-body {
-    background-color: rgb(47, 53, 47);
-}
-
 /*______________div`s_______________*/
 
 .coin-counter-div {
