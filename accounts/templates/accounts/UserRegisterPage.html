@@ -8,22 +8,23 @@
 
 {% block body %}
 
-<div class="pleaseRegister-h1-div">
+<div class="register-text-div">
     <h1>Hi,Welcome to EMAM COIN bot</h1>
     <h4>register in the bot and continue</h4>
 </div>
 
-<div class="information-fields-div">
+<div class="credential-fields-div">
     <form action="" method="post">
+        {% csrf_token %}
         <div class="card">
-            <div class="card-body" style="width: 400px;">
-                {% csrf_token %}
-                <label for="{{form.id_for_label}}" style="color: black; margin-bottom: 10px;">username</label>
-                <div style="width: 100%">{{form}}</div>
-                <input type="submit" value="continue" class="btn btn-primary" style="margin-top: 10px;">
+            <div class="card-body">
+                <p>username : </p>            
+                <h1>{{form}}</h1>
+                <input type="submit" value="continue" class="btn btn-primary">
             </div>
         </div>
     </form>
 </div>
+
 
 {% endblock body %}
