@@ -10,4 +10,4 @@ function UpdateUserCoin(){
     .then(res=>{console.log(res)})
 }
 
-setInterval(UpdateUserCoin , 5000);
+setInterval(UpdateUserCoin , 2000);

@@ -67,4 +67,17 @@
         <p>یاران</p>
     </button>
 </div>
+<script>
+    const username = document.getElementById("username").textContent;
+    const value_element = document.getElementById("coin-counter-text");
+    const url = "http://127.0.0.1:8000/tunnel/getcoin/"+username+"/";
+    const params = {
+      method: "GET"
+    };
+    fetch(url, params)
+      .then(response => response.json())
+      .then(jsonData => { 
+        value_element.textContent = jsonData.response.data[0].toString(); 
+      })
+</script>
 {% endblock body %}

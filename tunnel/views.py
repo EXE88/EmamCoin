@@ -6,3 +6,8 @@ from django.http import JsonResponse
 def AddCoinTunnelView(request,username,value):
     response = requests.post(f"http://127.0.0.1:5000/user/coin/add/{username}/{value}")
     return JsonResponse({"response":response.json()})
+
+
+def GetCoinTunnelView(request,username):
+    response = requests.get(f"http://127.0.0.1:5000/user/coin/get/{username}")
+    return JsonResponse({"response":response.json()})
