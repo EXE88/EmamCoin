@@ -41,7 +41,7 @@ def add_coin(username,value):
                                  """)
         user_id = user_id.fetchone()
         if user_id is not None:
-            cursor.execute(f"UPDATE Users SET coin = coin+{value} WHERE user_id={user_id[0]}")
+            cursor.execute(f"UPDATE Users SET coin = {value} WHERE user_id={user_id[0]}")
             connection.commit()
             return jsonify({"info":"user coins updated successfully!"}) , 200
         return jsonify({"error":"user not found!"}) , 404

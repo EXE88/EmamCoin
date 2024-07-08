@@ -5,4 +5,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('minecoin/' , include('main.urls')),
     path('accounts/' , include('accounts.urls')),
+    path('tunnel/', include('tunnel.urls')),
 ]
